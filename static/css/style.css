@@ -1,0 +1,79 @@
+/* C:\cse3107_website\static\css\style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #1a73e8;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+}

@@ -1,0 +1,93 @@
+<!-- core/templates/core/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSE 3107: Computer Architecture</title>
+        {% load static %} <!-- Add this line to load the static template tag -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+<body>
+    <div class="container">
+        <h1>CSE 3107</h1>
+        <p class="welcome">Welcome to CSE 3107! Assignments and handouts will be available here. Discussion will happen through a discussion board (TBD). Written assignments can be submitted via a form (TBD). Lectures timing: TBD.</p>
+
+        <div class="columns">
+            <div class="column">
+                <h2>More Information</h2>
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/1cjwIvSjVi3-DW7Jmy3-tO3pFsT0ubm_TjWlJBKYAtxo/edit?tab=t.0">Schedule/Syllabus</a></li>
+                    <li><a href="#">Course Information</a></li>
+                    <li><a href="#">Discussion Board</a></li>
+                    <li><a href="https://docs.google.com/document/d/1cjwIvSjVi3-DW7Jmy3-tO3pFsT0ubm_TjWlJBKYAtxo/edit?tab=t.0">Grading Rubrics</a></li>
+                </ul>
+
+                <h2>Handouts</h2>
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/1j1hdqeu0PrUDnulUaHiXLzITGv5kteHqoa2_grfMzMM/edit?tab=t.0">Solutions of the pipelining diagram problem of CT4</a></li>
+                </ul>
+
+                <h2>Assignments</h2>
+                <ul>
+                    <li><a href="https://github.com/nahin100/20-CSE3108">Programming Assignment 1</a></li>
+                    <li><a href="https://docs.google.com/document/d/1JkP9SEy3Nee6IXiXl7_GBRG5RLbtJNwJbROhH3XXLF4/edit?tab=t.0">Written Assignment 1</a></li>
+                    <li><a href="https://github.com/nahin100/20-CSE3108">Programming Assignment 2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1iwNEq3lHgAqeGz-lFmpc8qKmMFOzHspY">Written Assignment 2</a></li>
+                    <li><a href="https://github.com/nahin100/20-CSE3108">Programming Assignment 3</a></li>
+                    <li><a href="https://docs.google.com/document/d/1JkP9SEy3Nee6IXiXl7_GBRG5RLbtJNwJbROhH3XXLF4/edit?tab=t.0">Written Assignment 3</a></li>
+                    <li><a href="https://github.com/nahin100/20-CSE3108">Programming Assignment 4</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1iwNEq3lHgAqeGz-lFmpc8qKmMFOzHspY">Written Assignment 4</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2>Resources</h2>
+<ul>
+    <li><a href="https://books.google.com.bd/books/about/Digital_Design_and_Computer_Architecture.html?id=muCcBAAAQBAJ&redir_esc=y">Digital Design and Computer Architecture ARM Ed - Sarah L. Harris, David Money Harris (2016)</a></li>
+    <li><a href="https://books.google.com.bd/books/about/Computer_Organization_and_Design_ARM_Edi.html?id=Pz-XCgAAQBAJ&redir_esc=y">Computer Organization and Design ARM Ed - David A. Patterson, John L. Hennessy (2017)</a></li>
+    <li><a href="https://github.com/nahin100/20-CSE3108">HDL Code Repository</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1dS-R7HEnlfyS6CdSz5PqQBlWb5NObgtW">Introduction Slides</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1OQZDzu0L6F_vIfSBkT7MaC-DnxxZn-fR">HDL Slides</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1sJEuoR0PxszwcrrcobDF68DLKX2I-8IO">ALU Slides</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1afFWWG7KKVWPqw7-aM2Qa457L2nTZWaq">RF & Memory Slides</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1anRhkiVQlZOSs-OcXGPP5FMxoE6BSRy7">ISA & CPU Slides</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1bOweMn42gtCEoJ8j-pWPZvS6MtE48GHE">Assembler & Procedure Slides</a></li>
+    <li><a href="https://drive.google.com/drive/folders/12TYgAwcwwmWB-j5z1kLCtgotbtK0_r6X">Interfacing Slides</a></li>
+</ul>
+
+                <h2>Lectures</h2>
+                <ol>
+                    <li>Introduction 1 - Relationship between Digital Logic & Analog Electronics I</li>
+                    <li>Introduction 2 - Analog Electronics II (CMOS) Introduction</li>
+                    <li>Introduction 3 - FPGA</li>
+                    <li>HDL 1 - Combinational Circuit</li>
+                    <li>HDL 2 - Sequential Circuit</li>
+                    <li>ALU 1 - Adder & Subtractor</li>
+                    <li>ALU 2 - Unsigned Multiplier</li>
+                    <li>ALU 3 - Unsigned Divider</li>
+                    <li>ALU 4 - Signed Multiplier (Booth)</li>
+                    <li>ALU 6 - Final 4-bit ALU Design</li>
+                    <li>RF & Memory 1 - Memory</li>
+                    <li>RF & Memory 2 - Final Register Set Design</li>
+                    <li>RF & Memory 3 - Main Memory Design Example</li>
+                    <li><a href="https://www.youtube.com/watch?v=9lLpAFapndo&list=PLrjkTql3jnm8AcFgkc5TE_yQgeHEuKYrG&index=6">Floating Point Arithmetic - Represent decimal to IEEE 754</li>
+                    <li><a href="https://www.youtube.com/watch?v=fi8A4zz1d-s&list=PLWi7UcbOD_0tos7FFhw3OqT747uggusyJ&index=3">Floating Point Arithmetic - Add, Mul, Divide</li>
+                    <li>ISA & CPU 1 - ISA Design</li>
+                    <li>ISA & CPU 2 - CPU Design Example</li>
+                    <li>Assembler 1 - Assembler Design</li>
+                    <li>Assembler 2 - Procedure & STACK</li>
+                    <li>Interfacing & PP 1 - Interfacing</li>
+                    <li><a href="https://drive.google.com/file/d/1O0nMDFnfs5yj3nbScLnx-pzzEEJeLrCt/view?usp=drivesdk">Pipelining</li>
+                    <li>Interfacing & PP 2 - Parallel Processing</li>
+                    <li><a href="https://www.youtube.com/watch?v=S-8EFvCx04U&list=PL-Mfq5QS-s8iUJpNzCOtQKRfpswCrPbiW&index=19&pp=iAQB">Cache & Virtual Memory</li>
+                </ol>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 CSE 3107 Course RUET. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
