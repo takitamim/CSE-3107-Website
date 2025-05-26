@@ -1,0 +1,1 @@
+web: gunicorn cse3107_website.wsgi
