@@ -61,6 +61,19 @@ a:hover {
     text-decoration: underline;
 }
 
+.table-container {
+    width: 80%;
+    /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-container table {
+    width: 100%;
+    /* Table takes full width of the centered div */
+    border-collapse: collapse;
+}
+
 footer {
     text-align: center;
     padding: 10px;
